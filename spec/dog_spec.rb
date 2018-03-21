@@ -19,9 +19,10 @@ describe "Dog" do
 
   describe "attributes" do
     it 'has a name and a breed' do
-      dog = Dog.new({name: "Fido", breed: "lab"})
+      dog = Dog.new({name: "Fido", breed: "lab", age: 6})
       expect(dog.name).to eq("Fido")
       expect(dog.breed).to eq("lab")
+      expect(dog.age).to eq(6)
     end
   end
 
